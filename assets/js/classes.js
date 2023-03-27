@@ -1,6 +1,3 @@
-//knight ou Sorcerer
-//LittleMonster ou BigMonster
-
 class Character{
     _life = 1;
     maxLife = 1;
@@ -36,6 +33,26 @@ class Sorcerer extends Character{
         this.life = 80;
         this.attack = 14;
         this.defense = 3;
+        this.maxLife = this.life;
+    }
+}
+
+class LittleMonster extends Character{
+    constructor(){
+        super('Little Monster');
+        this.life = 40;
+        this.attack = 4;
+        this.defense = 4;
+        this.maxLife = this.life;
+    }
+}
+
+class BigMonster extends Character{
+    constructor(){
+        super('Big Monster');
+        this.life = 120;
+        this.attack = 16;
+        this.defense = 6;
         this.maxLife = this.life;
     }
 }
